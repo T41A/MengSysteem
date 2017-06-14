@@ -1,6 +1,7 @@
 #include "Valve.h"
 Valve::Valve(int pin):valvePin(pin)
 {
+  pinMode(pin,OUTPUT);
 }
 void Valve::Open(void)
 {

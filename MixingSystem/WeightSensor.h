@@ -4,10 +4,12 @@
 class WeightSensor
 {
 public:
+  WeightSensor(void);
   bool Calibrate(void);
   int GetLoad(void);
 private:
-
+  Q2HX711* hx711;
+  uint32_t nullSetpoint;
 };
 
 #endif
